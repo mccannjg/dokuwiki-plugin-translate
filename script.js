@@ -1,9 +1,10 @@
 
 
-/**
- * Fix the edit window size controls, for the translation view.
- */
-var _initSizeCtl = initSizeCtl;
+/** 
+* Fix the edit window size controls, for the translation view. 
+*/ 
+var _initSizeCtl = dw_editor.initSizeCtl; 
+dw_editor.initSizeCtl = function(ctlid,edid){ 
 initSizeCtl = function(ctlid,edid){
 
     // typically 'size__ctl', 'wiki__text';
